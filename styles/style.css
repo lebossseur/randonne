@@ -37,9 +37,6 @@ a:visited {
   cursor: pointer;
 }
 
-header {
-  height: 100vh;
-}
 header .header-container {
   text-align: center;
 }
@@ -81,13 +78,13 @@ header nav .nav-text ul li {
   font-size: 0.8rem;
 }
 header nav .nav-text ul li:first-child {
-  background: rgb(252, 252, 252);
+  background: rgb(238, 235, 235);
 }
 header nav .nav-text ul li:first-child a {
   color: black;
 }
 header nav .nav-text ul li:hover {
-  background: rgb(252, 252, 252);
+  background: rgb(238, 235, 235);
 }
 header nav .nav-text ul li:hover a {
   color: black;
@@ -101,4 +98,7 @@ header nav .nav-icons ul li {
   padding: 30px;
   color: white;
   font-size: 1.5rem;
+}
+header nav .nav-icons ul li i:hover {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
