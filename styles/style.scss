@@ -116,6 +116,7 @@ header {
 
             li:hover {
                 background: rgb(238, 235, 235);
+                transition: 0.3s ease;
 
                 a {
                     color: black;
@@ -152,4 +153,28 @@ header {
     }
 
 
+}
+
+.main {
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+
+    p:first-child {
+
+        font-size: 1.3rem;
+        padding: 100px;
+        position: relative;
+
+        &::after {
+
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 1px;
+            background: black;
+            left: 15%;
+        }
+
+    }
 }

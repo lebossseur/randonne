@@ -85,6 +85,7 @@ header nav .nav-text ul li:first-child a {
 }
 header nav .nav-text ul li:hover {
   background: rgb(238, 235, 235);
+  transition: 0.3s ease;
 }
 header nav .nav-text ul li:hover a {
   color: black;
@@ -101,4 +102,23 @@ header nav .nav-icons ul li {
 }
 header nav .nav-icons ul li i:hover {
   color: black;
+}
+
+.main {
+  text-align: center;
+  margin: 0 auto;
+  background: white;
+}
+.main p:first-child {
+  font-size: 1.3rem;
+  padding: 100px;
+  position: relative;
+}
+.main p:first-child::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background: black;
+  left: 15%;
 }/*# sourceMappingURL=style.css.map */
