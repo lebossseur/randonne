@@ -1,2 +1,2 @@
 Inter-ExtraBold
-MerriweatherLight
+weatherLight
