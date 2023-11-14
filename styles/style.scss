@@ -29,7 +29,7 @@ body {
 h1,
 h2,
 h3,
-h4,
+
 li {
 
     font-family: "Inter-ExtraBold";
@@ -44,27 +44,35 @@ a:visited {
     cursor: pointer;
 }
 
+.button {
 
+    border: 2px solid black;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+}
 
 header {
     // height: 100vh;
+    text-align: center;
 
     .header-container {
-        text-align: center;
+
 
         h1 {
             color: whitesmoke;
             font-size: 5rem;
             font-weight: 900;
             letter-spacing: 5px;
-            width: 750px;
+            width: 80%;
             margin: 0 auto 50px;
         }
 
         p {
             color: whitesmoke;
             font-size: 1.2rem;
-            width: 1200px;
+            width: 90%;
             margin: 0 auto 100px;
             font-style: italic;
 
@@ -85,6 +93,7 @@ header {
         justify-content: space-between;
         align-items: center;
         background: rgba(255, 255, 255, 0.183);
+        width: 100%;
 
 
 
@@ -163,7 +172,7 @@ header {
     p:first-child {
 
         font-size: 1.3rem;
-        padding: 100px;
+        padding: 100px 0 80px;
         position: relative;
 
         &::after {
@@ -172,9 +181,109 @@ header {
             position: absolute;
             width: 30%;
             height: 1px;
-            background: black;
-            left: 15%;
+            background: rgb(167, 161, 161);
+            transform: translateX(15%);
+            top: 110px;
         }
 
+        &::before {
+
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 1px;
+            background: rgb(167, 161, 161);
+            left: 30%;
+            transform: translateX(-70%);
+            top: 110px;
+        }
+
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 600;
+        width: 80%;
+        margin: 0 auto;
+        letter-spacing: 3px;
+        line-height: 90px;
+    }
+
+    p:last-child {
+        font-style: italic;
+        width: 80%;
+        margin: 35px auto;
+        line-height: 50px;
+
+
+    }
+
+    .main-img {
+        background: url(/images/pic01.jpg) center/cover;
+        width: 80%;
+        height: 700px;
+        margin: 0 auto 80px;
+
+    }
+
+    a {
+        color: black;
+        font: 800 0.9rem "Inter-ExtraBold";
+
+    }
+
+    a:hover {
+        color: rgb(242, 236, 236);
+        background: rgba(161, 151, 151, 0.462);
+    }
+
+
+    .photo {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        h4 {
+            font: 200 0.9rem "Merriweather-Light";
+            margin-bottom: 25px;
+        }
+
+        h3 {
+
+            font-size: 1.3rem;
+            width: 37%;
+            margin: 0 auto;
+            letter-spacing: 4px;
+            line-height: 30px;
+
+        }
+
+        .photo-left .tof {
+            background: url(/images/pic02.jpg)center/cover;
+            width: 75%;
+            height: 400px;
+            margin: 40px auto 70px;
+
+        }
+
+        .photo-right .tof {
+            background: url(/images/pic03.jpg)center/cover;
+            width: 75%;
+            height: 400px;
+            margin: 40px auto 70px;
+
+        }
+
+        p {
+            width: 75%;
+            margin: 0 auto;
+            line-height: 35px;
+        }
+
+        a {
+            margin-top: 100px;
+        }
     }
 }

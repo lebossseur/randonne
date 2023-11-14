@@ -24,7 +24,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 li {
   font-family: "Inter-ExtraBold";
   text-transform: uppercase;
@@ -37,7 +36,15 @@ a:visited {
   cursor: pointer;
 }
 
-header .header-container {
+.button {
+  border: 2px solid black;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+}
+
+header {
   text-align: center;
 }
 header .header-container h1 {
@@ -45,13 +52,13 @@ header .header-container h1 {
   font-size: 5rem;
   font-weight: 900;
   letter-spacing: 5px;
-  width: 750px;
+  width: 80%;
   margin: 0 auto 50px;
 }
 header .header-container p {
   color: whitesmoke;
   font-size: 1.2rem;
-  width: 1200px;
+  width: 90%;
   margin: 0 auto 100px;
   font-style: italic;
 }
@@ -65,6 +72,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.183);
+  width: 100%;
 }
 header nav .nav-text ul {
   display: flex;
@@ -111,7 +119,7 @@ header nav .nav-icons ul li i:hover {
 }
 .main p:first-child {
   font-size: 1.3rem;
-  padding: 100px;
+  padding: 100px 0 80px;
   position: relative;
 }
 .main p:first-child::after {
@@ -119,6 +127,82 @@ header nav .nav-icons ul li i:hover {
   position: absolute;
   width: 30%;
   height: 1px;
-  background: black;
-  left: 15%;
+  background: rgb(167, 161, 161);
+  transform: translateX(15%);
+  top: 110px;
+}
+.main p:first-child::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background: rgb(167, 161, 161);
+  left: 30%;
+  transform: translateX(-70%);
+  top: 110px;
+}
+.main h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  line-height: 90px;
+}
+.main p:last-child {
+  font-style: italic;
+  width: 80%;
+  margin: 35px auto;
+  line-height: 50px;
+}
+.main .main-img {
+  background: url(/images/pic01.jpg) center/cover;
+  width: 80%;
+  height: 700px;
+  margin: 0 auto 80px;
+}
+.main a {
+  color: black;
+  font: 800 0.9rem "Inter-ExtraBold";
+}
+.main a:hover {
+  color: rgb(242, 236, 236);
+  background: rgba(161, 151, 151, 0.462);
+}
+.main .photo {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .photo h4 {
+  font: 200 0.9rem "Merriweather-Light";
+  margin-bottom: 25px;
+}
+.main .photo h3 {
+  font-size: 1.3rem;
+  width: 37%;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  line-height: 30px;
+}
+.main .photo .photo-left .tof {
+  background: url(/images/pic02.jpg) center/cover;
+  width: 75%;
+  height: 400px;
+  margin: 40px auto 70px;
+}
+.main .photo .photo-right .tof {
+  background: url(/images/pic03.jpg) center/cover;
+  width: 75%;
+  height: 400px;
+  margin: 40px auto 70px;
+}
+.main .photo p {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 35px;
+}
+.main .photo a {
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
